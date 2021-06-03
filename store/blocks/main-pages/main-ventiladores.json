@@ -1,0 +1,49 @@
+{
+    "store.custom#main-ventiladores": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            "flex-layout.row#main-breadcrumb",
+            "flex-layout.row#subcategories-cards4",
+            "flex-layout.row#main-destaques",
+            "flex-layout.row#main-betaresults-7",
+            "flex-layout.row#how-to"
+        ],
+        "props":{
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#subcategories-cards4": {
+        "children":[
+            "flex-layout.col#subcategories-card-1",
+            "flex-layout.col#subcategories-card-2",
+            "flex-layout.col#subcategories-card-3"
+        ],
+        "props":{
+            "blockClass": "main-cards"
+        }
+    },
+    "flex-layout.row#main-betaresults-7": {
+        "children": [
+            "search-result-layout.customQuery#main-pages-7"
+        ],
+        "props": {
+            "blockClass": "main-cards"
+        }
+    },
+    "search-result-layout.customQuery#main-pages-7": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "Ventiladores/techo",
+                "mapField": "c,c"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#prueba",
+            "search-result-layout.mobile#prueba",
+            "search-not-found-layout"
+        ]
+    }
+}

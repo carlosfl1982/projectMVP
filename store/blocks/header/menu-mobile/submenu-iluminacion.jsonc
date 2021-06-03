@@ -1,0 +1,168 @@
+{
+    "vtex.menu@2.x:submenu#iluminacion": {
+      "props": {
+        "width": "100%",
+        "blockClass": ["subcategory-desktop"]
+      },
+      "children": [
+        "flex-layout.row#submenu-iluminacion"
+      ]
+    },
+    "flex-layout.row#submenu-iluminacion":{
+        "props": {
+            "colSizing": "auto"
+        },
+        "children": [
+        "flex-layout.col#sub-menu-iluminacion-1",
+        "flex-layout.col#sub-menu-iluminacion-2",
+        "flex-layout.col#sub-menu-iluminacion-3"
+        ]
+    },
+    "flex-layout.col#sub-menu-iluminacion-1": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "rich-text#menu-iluminacion"
+        ]
+    },
+    "flex-layout.col#sub-menu-iluminacion-2": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "menu-item#sub-menu-iluminacion-26",
+          "menu-item#sub-menu-iluminacion-27",
+          "menu-item#sub-menu-iluminacion-28",
+          "menu-item#sub-menu-iluminacion-29",
+          "menu-item#sub-menu-iluminacion-30",
+          "menu-item#sub-menu-iluminacion-31",
+          "menu-item#sub-menu-iluminacion-32"
+        ]
+    },
+    "flex-layout.col#sub-menu-iluminacion-3": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "image#menu-iluminacion"
+        ]
+    },
+    "rich-text#menu-iluminacion": {
+        "title": "link hacia toda la categoría",
+        "props": {
+          "width": "100%",
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "[Ver toda la categoría](main-iluminacion-comercial)",
+          "blockClass": "submenu-all"
+        }
+    },
+    "menu-item#sub-menu-iluminacion-26": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/iluminacion-comercial/panel-led",
+            "noFollow": true,
+            "tagTitle": "Panel led",
+            "text": "Panel led"
+          }
+        }
+    },
+    "menu-item#sub-menu-iluminacion-27": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/iluminacion-comercial/luminarios-colgantes",
+            "noFollow": true,
+            "tagTitle": "Luminarios colgantes",
+            "text": "Luminarios colgantes"
+          }
+        }
+    },
+    "menu-item#sub-menu-iluminacion-28": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/iluminacion-comercial/luminarios-envolventes",
+            "noFollow": true,
+            "tagTitle": "Luminarios envolventes",
+            "text": "Luminarios envolventes"
+          }
+        }
+    },
+    "menu-item#sub-menu-iluminacion-29": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/iluminacion-comercial/lamparas-de-seguridad",
+            "noFollow": true,
+            "tagTitle": "Lámparas de seguridad",
+            "text": "Lámparas de seguridad"
+          }
+        }
+    },
+    "menu-item#sub-menu-iluminacion-30": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/iluminacion-comercial/senalizacion",
+            "noFollow": true,
+            "tagTitle": "Señalización",
+            "text": "Señalización"
+          }
+        }
+    },
+    "menu-item#sub-menu-iluminacion-31": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-iluminacion-32": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+   
+    "image#menu-iluminacion":{
+        "props": {
+            "src": "/arquivos/menu10.png",
+            "blockClass": "image-submenu"
+        }
+    }
+    
+}
+  

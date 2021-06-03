@@ -1,0 +1,28 @@
+:global(.vtex-account_menu-link){
+    &:hover{
+    text-decoration: underline;
+    }
+}
+:global(.vtex-button){
+    &:hover{
+        opacity: 0.9;
+    }
+}
+/*:global(.profileSummary .flex-ns .mb8 .c-on-base){
+    font-family: "Montserrat",sans-serif;
+}*/
+:global(.vtex-pageHeader__title){
+    font-family: "Montserrat",sans-serif;
+}
+:global(.vtex-button__label .align-baseline){
+    font-weight: bold;
+}
+*{
+    font-family: "Montserrat",sans-serif !important;
+}
+body {
+    font-family: 'Montserrat', sans-serif!important;
+}
+*, *:after, *:before {
+    font-family: 'Montserrat', sans-serif!important;
+}

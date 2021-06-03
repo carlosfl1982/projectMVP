@@ -1,0 +1,48 @@
+{
+    "store.custom#main-pared": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            "flex-layout.row#main-breadcrumb",
+            "flex-layout.row#subcategories-cards3",
+            "flex-layout.row#main-destaques",
+            "flex-layout.row#main-betaresults-5",
+            "flex-layout.row#how-to"
+        ],
+        "props":{
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#subcategories-cards3": {
+        "children":[
+            "flex-layout.col#subcategories-card-1",
+            "flex-layout.col#subcategories-card-2"
+        ],
+        "props":{
+            "blockClass": "main-cards"
+        }
+    },
+    "flex-layout.row#main-betaresults-5": {
+        "children": [
+            "search-result-layout.customQuery#main-pages-5"
+        ],
+        "props": {
+            "blockClass": "main-cards"
+        }
+    },
+    "search-result-layout.customQuery#main-pages-5": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "Pared",
+                "mapField": "c"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#prueba",
+            "search-result-layout.mobile#prueba",
+            "search-not-found-layout"
+        ]
+    }
+}

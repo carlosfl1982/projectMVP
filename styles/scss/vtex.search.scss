@@ -1,0 +1,26 @@
+.biggy-autocomplete {
+  overflow: auto;
+  width: 80vw;
+  max-height: 90vh;
+
+  :global(.vtex-store-components-3-x-discountInsideContainer) {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 95vw;
+    margin-left: -90%;
+  }
+}
+
+:global(.vtex-rich-text-0-x-paragraph--filter-text) {
+    font-weight: 500;
+    @media only screen and (max-width: 320px) {
+      font-size: 14px;
+    }
+}
+:global(.vtex-search-result-3-x-filterIsOpen) {
+  :global(.vtex-search-result-3-x-filterIsOpen--filterNavigator):focus {
+    border: none;
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "store.custom#tecnolite-page": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            // "flex-layout.row#main-breadcrumb",
+            // "flex-layout.row#subcategories-cards",
+            // "flex-layout.row#subcategories-cards-t",
+            // "flex-layout.row#main-destaques",
+            "flex-layout.row#brand-container-2",
+            "flex-layout.row#how-to"
+        ],
+        "props": {
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#brand-container-2": {
+        "children": [
+            "search-result-layout.customQuery#brand-2"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+    "search-result-layout.customQuery#brand-2": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "tecnolite",
+                "mapField": "b"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#brand-custom-search",
+            "search-result-layout.mobile#brand-custom-search",
+            "search-not-found-layout"
+        ]
+    }
+}

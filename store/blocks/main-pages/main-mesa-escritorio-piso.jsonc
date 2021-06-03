@@ -1,0 +1,49 @@
+{
+    "store.custom#main-mesa-escritorio-piso": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            "flex-layout.row#main-breadcrumb",
+            "flex-layout.row#subcategories-cards2",
+            "flex-layout.row#main-destaques",
+            "flex-layout.row#main-betaresults-3",
+            "flex-layout.row#how-to"
+        ],
+        "props":{
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#subcategories-cards2": {
+        "children":[
+            "flex-layout.col#subcategories-card-1",
+            "flex-layout.col#subcategories-card-2",
+            "flex-layout.col#subcategories-card-3"
+        ],
+        "props":{
+            "blockClass": "main-cards"
+        }
+    },
+    "flex-layout.row#main-betaresults-3": {
+        "children": [
+            "search-result-layout.customQuery#main-pages-3"
+        ],
+        "props": {
+            "blockClass": "main-cards"
+        }
+    },
+    "search-result-layout.customQuery#main-pages-3": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "lamparas-de-mesa-escritorio-y-piso/lamparas-de-techo/",
+                "mapField": "c,c"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#prueba",
+            "search-result-layout.mobile#prueba",
+            "search-not-found-layout"
+        ]
+    }
+}

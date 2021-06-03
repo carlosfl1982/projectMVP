@@ -1,0 +1,168 @@
+{
+    "vtex.menu@2.x:submenu#lamp-techo": {
+      "props": {
+        "width": "100%",
+        "blockClass": ["subcategory-desktop"]
+      },
+      "children": [
+        "flex-layout.row#submenu-techo"
+      ]
+    },
+    "flex-layout.row#submenu-techo":{
+        "props": {
+            "colSizing": "auto"
+        },
+        "children": [
+        "flex-layout.col#sub-menu-1",
+        "flex-layout.col#sub-menu-2",
+        "flex-layout.col#sub-menu-3"
+        ]
+    },
+    "flex-layout.col#sub-menu-1": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "rich-text#menu-lamp-techo"
+        ]
+    },
+    "flex-layout.col#sub-menu-2": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "menu-item#sub-menu-techo-1",
+          "menu-item#sub-menu-techo-2",
+          "menu-item#sub-menu-techo-3",
+          "menu-item#sub-menu-techo-4",
+          "menu-item#sub-menu-techo-5",
+          "menu-item#sub-menu-techo-6",
+          "menu-item#sub-menu-techo-7"
+        ]
+    },
+    "flex-layout.col#sub-menu-3": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "image#menu-lamp-techo"
+        ]
+    },
+    "rich-text#menu-lamp-techo": {
+        "title": "link hacia toda la categoría",
+        "props": {
+          "width": "100%",
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "[Ver toda la categoría](/main-lamparas-de-techo)",
+          "blockClass": "submenu-all"
+        }
+    },
+    "menu-item#sub-menu-techo-1": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo/lamparas-cercanas-al-techo",
+            "noFollow": true,
+            "tagTitle": "Lámparas cercanas al techo",
+            "text": "Lámparas cercanas al techo"
+          }
+        }
+    },
+    "menu-item#sub-menu-techo-2": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo/lamparas-suspendidas",
+            "noFollow": true,
+            "tagTitle": "Lámparas suspendidas",
+            "text": "Lámparas suspendidas"
+          }
+        }
+    },
+    "menu-item#sub-menu-techo-3": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo/empotrables",
+            "noFollow": true,
+            "tagTitle": "Empotrables",
+            "text": "Empotrables"
+          }
+        }
+    },
+    "menu-item#sub-menu-techo-4": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo/rieles",
+            "noFollow": true,
+            "tagTitle": "Rieles",
+            "text": "Rieles"
+          }
+        }
+    },
+    "menu-item#sub-menu-techo-5": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-techo-6": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-techo-7": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+  
+    "image#menu-lamp-techo":{
+        "props": {
+            "src": "/arquivos/menu2.png",
+            "blockClass": "image-submenu"
+        }
+    }
+    
+}
+  

@@ -1,0 +1,167 @@
+{
+    "vtex.menu@2.x:submenu#patio": {
+      "props": {
+        "width": "100%",
+        "blockClass": ["subcategory-desktop"]
+      },
+      "children": [
+        "flex-layout.row#submenu-patio"
+      ]
+    },
+    "flex-layout.row#submenu-patio":{
+        "props": {
+            "colSizing": "auto"
+        },
+        "children": [
+        "flex-layout.col#sub-menu-patio-1",
+        "flex-layout.col#sub-menu-patio-2",
+        "flex-layout.col#sub-menu-patio-3"
+        ]
+    },
+    "flex-layout.col#sub-menu-patio-1": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "rich-text#menu-patio"
+        ]
+    },
+    "flex-layout.col#sub-menu-patio-2": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "menu-item#sub-menu-14",
+          "menu-item#sub-menu-15",
+          "menu-item#sub-menu-16",
+          "menu-item#sub-menu-17",
+          "menu-item#sub-menu-18",
+          "menu-item#sub-menu-19",
+          "menu-item#sub-menu-20"
+        ]
+    },
+    "flex-layout.col#sub-menu-patio-3": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "image#menu-patio"
+        ]
+    },
+    "rich-text#menu-patio": {
+        "title": "link hacia toda la categoría",
+        "props": {
+          "width": "100%",
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "[Ver toda la categoría](/main-patio-y-jardin)",
+          "blockClass": "submenu-all"
+        }
+    },
+    "menu-item#sub-menu-14": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/luces-de-pared",
+            "noFollow": true,
+            "tagTitle": "Luces de pared",
+            "text": "Luces de pared"
+          }
+        }
+    },
+    "menu-item#sub-menu-15": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/luces-de-techo",
+            "noFollow": true,
+            "tagTitle": "Luces de techo",
+            "text": "Luces de techo"
+          }
+        }
+    },
+    "menu-item#sub-menu-16": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/tiras-y-guirnaldas",
+            "noFollow": true,
+            "tagTitle": "Tiras y guirnaldas",
+            "text": "Tiras y guirnaldas"
+          }
+        }
+    },
+    "menu-item#sub-menu-17": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/estacas",
+            "noFollow": true,
+            "tagTitle": "Estacas",
+            "text": "Estacas"
+          }
+        }
+    },
+    "menu-item#sub-menu-18": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/solares",
+            "noFollow": true,
+            "tagTitle": "Solares",
+            "text": "Solares"
+          }
+        }
+    },
+    "menu-item#sub-menu-19": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/seguridad",
+            "noFollow": true,
+            "tagTitle": "Seguridad",
+            "text": "Seguridad"
+          }
+        }
+    },
+    "menu-item#sub-menu-20": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/patio-y-jardin/reflectores",
+            "noFollow": true,
+            "tagTitle": "Reflectores",
+            "text": "Reflectores"
+          }
+        }
+    },
+    "image#menu-patio":{
+        "props": {
+            "src": "/arquivos/menu8.png",
+            "blockClass": "image-submenu"
+        }
+    }
+    
+}
+  

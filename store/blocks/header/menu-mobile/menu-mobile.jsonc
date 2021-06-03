@@ -1,0 +1,412 @@
+{
+    "vtex.menu@2.x:menu#category-drawer": {
+        "children": [
+            "flex-layout.row#mobile-logo",
+            "menu-item#menu-signin-mobile",
+            "menu-item#menu-category-mobile",
+            "flex-layout.row#mobile",
+            "menu-item#menu-centro-mobile",
+            "menu-item#menu-terminos-mobile",
+            "menu-item#menu-aviso-mobile",
+            "menu-item#menu-preguntas-frecuentes-mobile"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    },
+    "menu-item#menu-category-mobile": {
+        "props": {
+            "blockClass": ["menu-item-department-mobile", "title-mobile"],
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Categorías",
+                "text": "Categorías"
+            }
+        }
+    },
+    "flex-layout.row#mobile": {
+      "props": {
+        "colSizing": "auto",
+        "orientation": "vertical",
+        "blockClass": "mobile-subcategory"
+      },  
+      "children": [
+        //"menu-item#mobile-candiles",
+        "menu-item#mobile-lamp-techo",
+        "menu-item#mobile-mesa-escritorio-piso",
+        /*"menu-item#mobile-mesa",
+        "menu-item#mobile-escritorio",
+        "menu-item#mobile-piso",*/
+        "menu-item#mobile-pared",
+        "menu-item#mobile-ventilador",
+        "menu-item#mobile-patio",
+        "menu-item#mobile-focos",
+        "menu-item#mobile-iluminacion",
+        "menu-item#mobile-otros"
+      ]
+    },
+
+    /*ROW LOGO*/
+    "flex-layout.row#mobile-logo": {
+        "props": {
+            "colSizing": "auto",
+            "orientation": "vertical",
+            "blockClass": "mobile-subcategory"
+        },
+        "children": [
+          "logo#mobile-logo"
+        ]
+    },
+    "logo#mobile-logo": {
+        "props": {
+          "title": "Logo",
+          "href": "/",
+          "url": "/arquivos/logotipo.png",
+          "width": "180"
+        }
+    },
+
+    "menu-item#mobile-candiles": {
+        "props": {      
+          "id": "menu-item-category-candiles",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Candiles",
+            "text": "Candiles "
+          },
+          "blockClass": "categs-mobile"
+        },
+        "blocks": [
+          "submenu.accordion#mob-candiles"
+        ]
+    },
+    "submenu.accordion#mob-candiles": {
+        "children": [
+          "menu#submenu-candiles"
+        ]    
+    },
+    "menu-item#menu-ver-categoria-candiles": {
+      "props": {
+          "blockClass": "menu-item-categorias-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "href": "/Candiles/d",
+              "noFollow": true,
+              "tagTitle": "Ver toda la categoría",
+              "text": "Ver toda la categoría"
+          }
+      }
+    },
+    "menu#submenu-candiles": {
+        "children": [
+          "menu-item#menu-ver-categoria-candiles",
+          "image#submenu-candiles"
+        ],
+        "props": {
+            "categoryId": 1,
+            "orientation": "vertical",
+            "blockClass": "menu-categorias"
+        }
+    },
+    "image#submenu-candiles":{
+        "props": {
+          //"maxWidth": "10%",
+          "src": "/arquivos/menu1.png",
+          "blockClass": "image-submenu"
+        }
+    },
+
+  "menu-item#mobile-lamp-techo": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Lámparas de Techo",
+          "text": "Lámparas de Techo "
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-techo"
+      ]
+  },
+  "submenu.accordion#mob-techo": {
+      "children": [
+        "flex-layout.row#submenu-techo"
+      ]    
+  },
+
+  "menu-item#mobile-mesa-escritorio-piso": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Mesa, Escritorio y Piso",
+          "text": "Mesa, Escritorio y Piso"
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-mesa-escritorio-piso"
+      ]
+  },
+  "submenu.accordion#mob-mesa-escritorio-piso": {
+      "children": [
+        //"menu#submenu-mesa-escritorio-piso"
+        "flex-layout.row#submenu-mesa"
+      ]    
+  },
+  
+  "menu-item#mobile-pared": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Pared",
+          "text": "Pared "
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-pared"
+      ]
+  },
+  "submenu.accordion#mob-pared": {
+      "children": [
+        "flex-layout.row#submenu-pared"
+      ]    
+  },
+    
+ 
+  "menu-item#mobile-ventilador": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Ventiladores",
+          "text": "Ventiladores "
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-ventilador"
+      ]
+  },
+  "submenu.accordion#mob-ventilador": {
+      "children": [
+        "flex-layout.row#submenu-ventiladores"
+      ]    
+  },
+
+  "menu-item#mobile-patio": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Patio y Jardín",
+          "text": "Patio y Jardín "
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-patio"
+      ]
+  },
+  "submenu.accordion#mob-patio": {
+      "children": [
+        "flex-layout.row#submenu-patio"
+      ]    
+  },
+
+  "menu-item#mobile-focos": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Focos",
+          "text": "Focos "
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-focos"
+      ]
+  },
+  "submenu.accordion#mob-focos": {
+      "children": [
+        "flex-layout.row#submenu-focos"
+      ]    
+  },
+
+  "menu-item#mobile-iluminacion": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Iluminación Comercial",
+          "text": "Iluminación Comercial"
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-iluminacion"
+      ]
+  },
+  "submenu.accordion#mob-iluminacion": {
+      "children": [
+        "flex-layout.row#submenu-iluminacion"
+      ]    
+  },
+
+  "menu-item#mobile-otros": {
+      "props": {      
+        "id": "menu-item-category-candiles",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/",
+          "noFollow": false,
+          "tagTitle": "Otros",
+          "text": "Otros "
+        },
+        "blockClass": "categs-mobile"
+      },
+      "blocks": [
+        "submenu.accordion#mob-otros"
+      ]
+  },
+  "submenu.accordion#mob-otros": {
+      "children": [
+        "flex-layout.row#submenu-otros"
+      ]    
+  },
+    
+    /*2DA SECTION*/
+    /*LOGIN*/
+    "menu-item#menu-signin-mobile": {
+        "props": {
+            "blockClass": "menu-item-signin-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/login",
+                "noFollow": true,
+                "tagTitle": "login",
+                "text": "Iniciar sesión"
+            }
+        }
+    },
+    /*TITLE*/
+    "menu-item#menu-centro-mobile": {
+        "props": {
+            "blockClass": ["menu-item-sucursales-mobile", "title-mobile"],
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "noFollow": true,
+                "tagTitle": "Centro de ayuda",
+                "text": "Centro de ayuda"
+            }
+        }
+    },
+    /*LINKS*/
+    "menu-item#menu-terminos-mobile": {
+        "props": {
+            "blockClass": "menu-item-sucursales-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/terminos-condiciones",
+                "noFollow": true,
+                "tagTitle": "Terminos y condiciones",
+                "text": "Terminos y condiciones"
+            }
+        }
+    },
+    "menu-item#menu-aviso-mobile": {
+        "props": {
+            "blockClass": "menu-item-sucursales-mobile",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/politica-de-privacidad",
+                "noFollow": true,
+                "tagTitle": "Aviso de privacidad",
+                "text": "Aviso de privacidad"
+            }
+        }
+    },
+    "menu-item#menu-preguntas-frecuentes-mobile": {
+      "props": {
+          "blockClass": "menu-item-sucursales-mobile",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+              "type": "internal",
+              "href": "/preguntas-frecuentes",
+              "noFollow": true,
+              "tagTitle": "Preguntas Frecuentes",
+              "text": "Preguntas Frecuentes"
+          }
+      }
+    }
+  
+}

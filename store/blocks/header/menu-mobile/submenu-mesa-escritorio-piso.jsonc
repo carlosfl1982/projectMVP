@@ -1,0 +1,153 @@
+{
+    "vtex.menu@2.x:submenu#mesa-escritorio-piso": {
+      "props": {
+        "width": "100%",
+        "blockClass": ["subcategory-desktop"]
+      },
+      "children": [
+        "flex-layout.row#submenu-mesa"
+      ]
+    },
+    "flex-layout.row#submenu-mesa":{
+        "props": {
+            "colSizing": "auto"
+        },
+        "children": [
+        "flex-layout.col#sub-menu-mesa-1",
+        "flex-layout.col#sub-menu-mesa-2",
+        "flex-layout.col#sub-menu-mesa-3"
+        ]
+    },
+    "flex-layout.col#sub-menu-mesa-1": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "rich-text#menu-mesa"
+        ]
+    },
+    "flex-layout.col#sub-menu-mesa-2": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "menu-item#sub-menu-mesa-5",
+          "menu-item#sub-menu-mesa-6",
+          "menu-item#sub-menu-mesa-7",
+          "menu-item#sub-menu-mesa-8",
+          "menu-item#sub-menu-mesa-9",
+          "menu-item#sub-menu-mesa-10"
+        ]
+    },
+    "flex-layout.col#sub-menu-mesa-3": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "image#menu-mesa"
+        ]
+    },
+    "rich-text#menu-mesa": {
+        "title": "link hacia toda la categoría",
+        "props": {
+          "width": "100%",
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "[Ver toda la categoría](/main-mesa-escritorio-y-piso)",
+          "blockClass": "submenu-all"
+        }
+    },
+    "menu-item#sub-menu-mesa-5": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo?fuzzy=0&map=categoria&operator=and&query=/lamparas-de-mesa",
+            "noFollow": true,
+            "tagTitle": "Lámparas de mesa",
+            "text": "Lámparas de mesa"
+          }
+        }
+    },
+    "menu-item#sub-menu-mesa-6": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo?fuzzy=0&map=categoria&operator=and&query=/lamparas-de-piso",
+            "noFollow": true,
+            "tagTitle": "Lámparas piso",
+            "text": "Lámparas piso"
+          }
+        }
+    },
+    "menu-item#sub-menu-mesa-7": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/lamparas-de-techo?fuzzy=0&map=categoria&operator=and&query=/lamparas-de-escritorio",
+            "noFollow": true,
+            "tagTitle": "Lámparas de escritorio",
+            "text": "Lámparas de escritorio"
+          }
+        }
+    },
+    "menu-item#sub-menu-mesa-8": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-mesa-9": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-mesa-10": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+  
+    "image#menu-mesa":{
+        "props": {
+            "src": "/arquivos/menu3.png",
+            "blockClass": "image-submenu"
+        }
+    }
+    
+}
+  

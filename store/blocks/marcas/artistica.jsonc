@@ -1,0 +1,40 @@
+{
+    "store.custom#artistica-page": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            // "flex-layout.row#main-breadcrumb",
+            // "flex-layout.row#subcategories-cards",
+            // "flex-layout.row#subcategories-cards-t",
+            // "flex-layout.row#main-destaques",
+            "flex-layout.row#brand-container-6",
+            "flex-layout.row#how-to"
+        ],
+        "props": {
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#brand-container-6": {
+        "children": [
+            "search-result-layout.customQuery#brand-6"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+    "search-result-layout.customQuery#brand-6": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "artistica",
+                "mapField": "b"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#brand-custom-search",
+            "search-result-layout.mobile#brand-custom-search",
+            "search-not-found-layout"
+        ]
+    }
+}

@@ -1,0 +1,177 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#lamp-techo",
+      "menu-item#mesa-escritorio-piso",
+      "menu-item#pared",
+      "menu-item#ventilador",
+      "menu-item#patio",
+      "menu-item#focos",
+      "menu-item#iluminacion",
+      "menu-item#otros"
+    ]
+  },
+
+  "menu-item#lamp-techo": {
+    "props": {      
+      "id": "menu-item-category-apparel-lamp-techo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-lamparas-de-techo",
+        "noFollow": false,
+        "tagTitle": "Lámparas de Techo",
+        "text": "Lámparas de Techo"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#lamp-techo"
+    ]
+  },
+
+  "menu-item#mesa-escritorio-piso": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-mesa-escritorio-y-piso",
+        "noFollow": false,
+        "tagTitle": "Mesa, Escritorio y Piso",
+        "text": "Mesa, Escritorio y Piso"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#mesa-escritorio-piso"
+    ]
+  },
+
+  "menu-item#pared": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-pared",
+        "noFollow": false,
+        "tagTitle": "Pared",
+        "text": "Pared"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#pared"
+    ]
+  },
+
+  "menu-item#ventilador": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-ventiladores",
+        "noFollow": false,
+        "tagTitle": "Ventiladores",
+        "text": "Ventiladores"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#ventilador"
+    ]
+  },
+
+  "menu-item#patio": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-patio-y-jardin",
+        "noFollow": false,
+        "tagTitle": "Patio y Jardín",
+        "text": "Patio y Jardín"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#patio"
+    ]
+  },
+
+  "menu-item#focos": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-focos",
+        "noFollow": false,
+        "tagTitle": "Focos",
+        "text": "Focos"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#focos"
+    ]
+  },
+
+  "menu-item#iluminacion": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main- iluminacion-comercial",
+        "noFollow": false,
+        "tagTitle": "Iluminación Comercial",
+        "text": "Iluminación Comercial"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#iluminacion"
+    ]
+  },
+
+  "menu-item#otros": {
+    "props": {      
+      "id": "menu-item-category-apparel",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/main-otros",
+        "noFollow": false,
+        "tagTitle": "Otros",
+        "text": "Otros"
+      },
+      "blockClass": "categs"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#otros"
+    ]
+  }
+}

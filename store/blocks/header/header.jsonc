@@ -1,0 +1,306 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "sandbox#countdown": {
+    "props": {
+      "width": "100%",
+      "height": "40px",
+      "initialContent": "<style>@media (max-width: 768px){.titulo-hotsale{display:none;}}</style><script src='https://lamparayamx.vteximg.com.br/arquivos/jquery-ui.min.js'></script><script src='https://lamparayamx.vteximg.com.br/arquivos/countdown.js?v=01'></script><h1 style='height:40px;background:#e02b45;color:#fff;text-align:center;margin:0;font-size:18px;padding:14px 0;display:flex;justify-content:center;align-items:center;'><span class='titulo-hotsale' style='width: auto; color: #fff; text-transform: uppercase; margin-right:20px;''>FALTA POCO PARA   </span><img style='width: 40px; margin-right: 10px;' src='https://assets.hotsale.com.mx/public/hotsale-mx/imgs/hot-sale-2021.svg'><span id='countfashion' style='font-size:30px'></span><span class='titulo-hotsale' style='width: auto; color: #fff; text-transform: uppercase; margin-left:20px;''>¡No te lo puedes perder!</span></h1>",
+      "allowCookies": true,
+      "blockClass": "countdown-buenfin"
+    }
+  },
+  "header-layout.desktop": {
+    "title": "Header Desktop",
+    "children": [
+      "sticky-layout#1-desktop"
+    ]
+  },
+  
+  "logo#car": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://cbcecub2c.vteximg.com.br/arquivos/Grupo-625.png",
+      "width": "30"
+    }
+  },
+
+  "sticky-layout#1-desktop": {
+    "title": "Header fixo",
+    "props": {
+      "blockClass": "sticky-header",
+      "position": "N/A"
+    },
+    "children": [
+      //"sandbox#metatag",
+      "sandbox#countdown",
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-desktop"
+    ]
+  },
+  "sandbox#metatag": {
+    "props": {
+      "width": "0px",
+      "height": "0px",
+      "initialContent": "<meta name='google-site-verification' content='d68DdK8KgXYI_0LVZY2F8jQcqxjy73AIAKZq44Z4evM'/>",
+      "allowCookies": true
+    }
+  },
+  /*1ST ROW HEADER*/
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "rich-text#tipbartop",
+      "rich-text#yellow-left"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tip-bartop"]
+    }
+  },
+  "rich-text#tipbartop": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "¡Sigue creando historias, tenemos lo mejor para ti!",
+      "blockClass": ["textTipbar", "header-black"]
+    }
+  },
+ 
+  "rich-text#yellow-left": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "width": "40%",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "**Envío gratis** por lanzamiento",
+      "blockClass": ["textTipbar", "header-yellow"]
+    }
+  },
+  /*2ND ROW HEADER*/
+  "flex-layout.row#2-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "login",
+      "logo#wishlist",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logoBrand"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "search-bar": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "customSearchPageUrl": "/search?_query=${term}",
+      "attemptPageTypeSearch": true,
+      "openAutocompleteOnFocus": true,
+      "placeholder": "¿Qué estás buscando?",
+      "blockClass": "main-search-bar",
+      "width": "grow",
+      "maxWidth": "750px"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+  
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logotipo.png",
+      "width": "180"
+    }
+  },
+
+  /*3RD ROW IN HEADER*/
+  "flex-layout.row#3-desktop": {
+    "title": "Header Menu Principal",
+    "props": {
+      "blockClass": ["menu-link"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "left"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
+  /*    MOBILE    */
+  "header-layout.mobile": {
+    "children": [
+      "sandbox#countdown",
+      "flex-layout.row#head-mobile",
+      "sticky-layout#1-mobile"
+    ]
+  },
+
+  "flex-layout.row#head-mobile": {
+    "children": [
+      "rich-text#yellow-mobile"
+    ],
+    "props": {
+      "fullWidth": false,
+      "blockClass": "tip-bartop"
+    }
+  },
+  "rich-text#yellow-mobile": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "**Envío gratis** por lanzamiento",
+      "blockClass": ["textTipbar", "header-yellow"]
+    }
+  },
+
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ],
+    "props": {
+      "blockClass": "custom-sticky-header--mobile"
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": [
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "searchbar-mobile"
+    }
+  },
+  "flex-layout.row#1-mobile": {
+    "title": "Header Mobile",
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "logo#wishlist",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": [
+      //"menu#drawer"
+      "vtex.menu@2.x:menu#category-drawer"
+    ]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#mobile-test-category",
+      "menu-item#mobile-paes-e-massas",
+      "menu-item#lancamento",
+      "menu-item#lojas",
+      "menu-item#promocoes",
+      "menu-item#blog"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "title": "Logotipo mobile",
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logotipo.png",
+      "width": "100%"
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": false,
+      "iconLabel": "Ingresar o okoko"
+    }
+  },
+  "logo#wishlist": {
+    "props": {
+      "blockClass": "wish-icon",
+      "title": "Logo",
+      "href": "/wishlist",
+      "url": "/arquivos/icon_favorite.png",
+      "width": "180"
+    }
+  },
+  "vtex.menu@2.x:menu#custom-menu-right": {
+    "children": [
+      "menu-item#blog"
+    ]
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "blockClass": ["menu-item-blog"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/blog",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "blog editable"
+      }
+    }
+  }
+}

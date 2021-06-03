@@ -1,0 +1,47 @@
+{
+    "store.custom#main-otros": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            "flex-layout.row#main-breadcrumb",
+            "flex-layout.row#subcategories-cards-otros",
+            "flex-layout.row#main-destaques",
+            "flex-layout.row#main-betaresults-4",
+            "flex-layout.row#how-to"
+        ],
+        "props":{
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#subcategories-cards-otros": {
+        "children": [
+            "flex-layout.col#subcategories-card-2"
+        ],
+        "props": {
+            "blockClass": "main-cards"
+        }
+    },
+    "flex-layout.row#main-betaresults-4": {
+        "children": [
+            "search-result-layout.customQuery#main-pages-4"
+        ],
+        "props": {
+            "blockClass": "main-cards"
+        }
+    },
+    "search-result-layout.customQuery#main-pages-4": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "otros",
+                "mapField": "c"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#prueba",
+            "search-result-layout.mobile#prueba",
+            "search-not-found-layout"
+        ]
+    } 
+}

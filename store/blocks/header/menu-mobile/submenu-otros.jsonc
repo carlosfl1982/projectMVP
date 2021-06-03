@@ -1,0 +1,137 @@
+{
+    "vtex.menu@2.x:submenu#otros": {
+      "props": {
+        "width": "100%",
+        "blockClass": ["subcategory-desktop"]
+      },
+      "children": [
+        "flex-layout.row#submenu-otros"
+      ]
+    },
+    "flex-layout.row#submenu-otros":{
+        "props": {
+            "colSizing": "auto"
+        },
+        "children": [
+        "flex-layout.col#sub-menu-otros-1",
+        "flex-layout.col#sub-menu-otros-2",
+        "flex-layout.col#sub-menu-otros-3"
+        ]
+    },
+    "flex-layout.col#sub-menu-otros-1": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "rich-text#menu-otros"
+        ]
+    },
+    "flex-layout.col#sub-menu-otros-2": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "menu-item#sub-menu-otros-31",
+          "menu-item#sub-menu-otros-32",
+          "menu-item#sub-menu-otros-33",
+          "menu-item#sub-menu-otros-34",
+          "menu-item#sub-menu-otros-35"
+        ]
+    },
+    "flex-layout.col#sub-menu-otros-3": {
+        "props": {
+          "preventVerticalStretch": "false"
+        },
+        "children": [
+          "image#menu-otros"
+        ]
+    },
+    "rich-text#menu-otros": {
+        "title": "link hacia toda la categoría",
+        "props": {
+          "width": "100%",
+          "textAlignment": "CENTER",
+          "textPosition": "LEFT",
+          "text": "[Ver toda la categoría](/main-otros)",
+          "blockClass": "submenu-all"
+        }
+    },
+    "menu-item#sub-menu-otros-31": {
+        "props": {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/Concentrador/Rieles",
+            "noFollow": true,
+            "tagTitle": "Rieles",
+            "text": "Rieles"
+          }
+        }
+    },
+    "menu-item#sub-menu-otros-32": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-otros-33": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-otros-34": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "menu-item#sub-menu-otros-35": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "",
+          "noFollow": true,
+          "tagTitle": "",
+          "text": ""
+        }
+      }
+    },
+    "image#menu-otros":{
+        "props": {
+            "src": "/arquivos/menu11.png",
+            "blockClass": "image-submenu"
+        }
+    }
+    
+}
+  

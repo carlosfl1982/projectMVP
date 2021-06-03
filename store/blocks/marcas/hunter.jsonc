@@ -1,0 +1,89 @@
+{
+    "store.custom#hunter-page": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            // "flex-layout.row#main-breadcrumb",
+            // "flex-layout.row#subcategories-cards",
+            // "flex-layout.row#subcategories-cards-t",
+            // "flex-layout.row#main-destaques",
+            "flex-layout.row#brand-container",
+            "flex-layout.row#how-to"
+        ],
+        "props": {
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#brand-container": {
+        "children": [
+            "search-result-layout.customQuery#brand-1"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+    "search-result-layout.customQuery#brand-1": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "hunter",
+                "mapField": "b"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#brand-custom-search",
+            "search-result-layout.mobile#brand-custom-search",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#brand-custom-search": {
+        "children": [
+            "breadcrumb.search",
+            "search-title.v2",
+            "flex-layout.row#top",
+            "search-fetch-previous",
+            "flex-layout.row#brand-results",
+            "search-fetch-more"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": true
+        }
+    },
+    "search-result-layout.mobile#brand-custom-search": {
+        "children": [
+            "search-title.v2",
+            "flex-layout.row#top",
+            "search-fetch-previous",
+            "flex-layout.row#brand-results",
+            "search-fetch-more"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": true
+        }
+    },
+    "flex-layout.row#brand-results": {
+        "children": [
+            "flex-layout.col#filter-brand",
+            "flex-layout.col#search-brand"
+        ]
+    },
+    "flex-layout.col#filter-brand": {
+        "props": {
+            "width": "15%"
+        },
+        "children": [
+            "filter-navigator.v3"
+        ]
+    },
+    "flex-layout.col#search-brand": {
+        "props": {
+            "marginLeft": ""
+        },
+        "children": [
+            "search-content"
+        ]
+    }
+}

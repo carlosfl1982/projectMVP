@@ -1,0 +1,52 @@
+{
+    "store.custom#main-iluminacion-comercial": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            "flex-layout.row#main-breadcrumb",
+            "flex-layout.row#subcategories-cards-iluminacion-comercial",
+            // "flex-layout.row#subcategories-cards-t",
+            "flex-layout.row#main-destaques",
+            "flex-layout.row#main-betaresults-2",
+            "flex-layout.row#how-to"
+        ],
+        "props":{
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#subcategories-cards-iluminacion-comercial": {
+        "children":[
+            "flex-layout.col#subcategories-card-1",
+            "flex-layout.col#subcategories-card-2"
+        ],
+        "props":{
+            "blockClass": "main-cards"
+        }
+    },
+    "flex-layout.row#main-betaresults-2": {
+        "children": [
+            "search-result-layout.customQuery#main-pages-2"
+        ],
+        "props": {
+            "blockClass": "main-cards"
+        }
+    },
+    "search-result-layout.customQuery#main-pages-2": {
+        "props": {
+            "querySchema": {
+            "orderByField": "",
+            "hideUnavailableItems": false,
+            "maxItemsPerPage": 12,
+            "queryField": "iluminacion-comercial/",
+            "mapField": "c",
+            "skusFilter": "ALL_AVAILABLE",
+            "simulationBehavior": "skip",
+            "__unstableProductOriginVtex": true
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#prueba",
+            "search-result-layout.mobile#prueba",
+            "search-not-found-layout"
+        ]
+    }
+}

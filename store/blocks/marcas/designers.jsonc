@@ -1,0 +1,40 @@
+{
+    "store.custom#designers-page": {
+        "children": [
+            "flex-layout.row#promotion-banner",
+            // "flex-layout.row#main-breadcrumb",
+            // "flex-layout.row#subcategories-cards",
+            // "flex-layout.row#subcategories-cards-t",
+            // "flex-layout.row#main-destaques",
+            "flex-layout.row#brand-container-5",
+            "flex-layout.row#how-to"
+        ],
+        "props": {
+            "blockClass": "department-home"
+        }
+    },
+    "flex-layout.row#brand-container-5": {
+        "children": [
+            "search-result-layout.customQuery#brand-5"
+        ],
+        "props": {
+            "blockClass": "container"
+        }
+    },
+    "search-result-layout.customQuery#brand-5": {
+        "props": {
+            "querySchema": {
+                "orderByField": "",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 8,
+                "queryField": "designers",
+                "mapField": "b"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#brand-custom-search",
+            "search-result-layout.mobile#brand-custom-search",
+            "search-not-found-layout"
+        ]
+    }
+}

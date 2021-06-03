@@ -1,0 +1,2391 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#main-banner",
+      "flex-layout.row#titulo-hotsale",
+      //"flex-layout.row#titulo-ofertas",
+      "flex-layout.row#context-ofertas",
+      "flex-layout.row#context-ofertas-hotsale",
+      "flex-layout.row#context-ofertas-hotsale2",
+      "flex-layout.row#titulo-tendencias",
+      "flex-layout.row#context-tendencias",
+      "flex-layout.row#titulo-categorias",
+      "flex-layout.row#categorias",
+      "flex-layout.row#categorias2",
+      "flex-layout.row#categorias-mobile",
+      "flex-layout.row#titulo-espacios-estilo",
+      "flex-layout.row#banners",
+      "flex-layout.row#banners-asi-de-simple",
+      "flex-layout.row#banners-asi-de-simple-mobile",
+      "flex-layout.row#banners-marcas-desktop1-titulo",
+      "flex-layout.row#banners-marcas-mobile1",
+      //"flex-layout.row#banners-marcas-mobile2",
+      //"flex-layout.row#banners-marcas-mobile3",
+      "flex-layout.row#banners-marcas-mobile4",
+      "flex-layout.row#banners-marcas-mobile5",
+      "flex-layout.row#banners-marcas-mobile6",
+      //"flex-layout.row#banners-marcas-mobile7",
+      //"flex-layout.row#banners-marcas-desktop1",
+      "flex-layout.row#banners-marcas-desktop2",
+      "flex-layout.row#banners-marcas-desktop3",
+      "flex-layout.row#services"
+    ],
+    "props": {
+      "width": "100%"
+    }
+  },
+  "list-context.image-list#main-banner": {
+    "title": "Banner Principal",
+    "children": [
+      "slider-layout#banner-images" //,
+      //"flex-layout.row#into-slider"
+    ],
+    "props": {
+      "fullWidth": true,
+      "images": [
+        {
+          "image": "/arquivos/hotsale_main_banner.jpg",
+          "mobileImage": "/arquivos/hotsale_main_banner_mobile.jpg",
+          "link": {
+            "url": "https://www.lamparaya.com.mx/161?map=productClusterIds"
+          }
+        },
+        {
+          "image": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/5bd45745-22bd-4b00-bda8-a78b8403c3c5___f5894141304dba69a8e51077c7768b98.png",
+          "mobileImage": "/arquivos/new_mobile_2.png",
+          "link": {
+            "url": "https://www.lamparaya.com.mx/159?map=productClusterIds"
+          }
+        },
+        {
+          "image": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/3a13c290-e499-4561-b1ce-90c42428f291___18c6ae5348486d383018024f8b1da1b8.png",
+          "mobileImage": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/76296202-8840-4ec9-987c-d3d2aeae3d65___7966781d9be62116843ddaf2701f5ba0.png",
+          "link": {
+            "url": "https://www.lamparaya.com.mx/148?map=productClusterIds"
+          }
+        },
+        {
+          "image": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/51660582-91a3-4929-b771-c09b97ae21d2___0600a5e71658ee8f9bc6f2faa360eff7.png",
+          "mobileImage": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/e0d9722b-339a-4d35-9f63-201db09b0cd8___42c232204d6c88b163371ebbd7e4c09f.png",
+          "link": {
+            "url": "https://www.lamparaya.com.mx/145?map=productClusterIds"
+          }
+        },
+        {
+          "image": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/5047586a-a1d1-4700-b5c7-9755bfb7c720___9b3f8256f7c9b50f87e5600f01d3e862.png",
+          "mobileImage": "https://lamparayamx.vtexassets.com/assets/vtex.file-manager-graphql/images/d913351a-161b-456b-ace0-c11be5e9778e___e7d013a7a0ac53ea60e0ee345a370470.png",
+          "link": {
+            "url": "https://www.lamparaya.com.mx/146?map=productClusterIds"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-images": {
+    "title": "Configuración Slider Banner",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000
+      },
+      "infinite": true,
+      //"infinite": true,
+      //"blockClass": "carousel",
+      "showNavigationArrows": "always",
+      "fullWidth": true,
+      "showPaginationDots": "always"
+    } //,
+    //"children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+  },
+  /*   CATEGORIES   */
+  "flex-layout.row#titulo-categorias": {
+    "children": [
+      "rich-text#titulo-cat"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "blockClass": "categorias-title"
+    }
+  },
+  /*   ROWS CATEGORIES   */
+  "rich-text#titulo-cat": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Categorías",
+      "blockClass": [
+        "txt-cat"
+      ]
+    }
+  },
+  "flex-layout.row#categorias": {
+    "children": [
+      "flex-layout.col#col1-cat",
+      "flex-layout.col#col2-cat",
+      "flex-layout.col#col3-cat",
+      "flex-layout.col#col4-cat",
+      "flex-layout.col#col5-cat"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "maxWidth": "90%",
+      //"fullWidth": true,
+      "blockClass": [
+        "categorias",
+        "catprod"
+      ]
+    }
+  },
+  "flex-layout.col#col1-cat": {
+    "children": [
+      "image#techo",
+      "rich-text#txt-techo"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#techo": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria1.png"
+      //"maxHeight": 200
+    }
+  },
+  "rich-text#txt-techo": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Techo",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col2-cat": {
+    "children": [
+      "image#piso",
+      "rich-text#txt-piso"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#piso": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria2.png"
+      //"maxHeight": 200
+    }
+  },
+  "rich-text#txt-piso": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Piso",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col3-cat": {
+    "children": [
+      "image#mesa",
+      "rich-text#txt-mesa"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#mesa": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria3.png"
+      //"maxHeight": 200
+    }
+  },
+  "rich-text#txt-mesa": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Mesa",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col4-cat": {
+    "children": [
+      "image#escritorio",
+      "rich-text#txt-escritorio"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#escritorio": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria4.png"
+      //"maxHeight": 200
+    }
+  },
+  "rich-text#txt-escritorio": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Escritorio",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col5-cat": {
+    "children": [
+      "image#recamara",
+      "rich-text#txt-recamara"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#recamara": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria5.png"
+      //"maxHeight": 200
+    }
+  },
+  "rich-text#txt-recamara": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Recámara",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.row#categorias2": {
+    "children": [
+      "flex-layout.col#col6-cat",
+      "flex-layout.col#col7-cat",
+      "flex-layout.col#col8-cat",
+      "flex-layout.col#col9-cat",
+      "flex-layout.col#col10-cat"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "blockClass": [
+        "categorias",
+        "catprod",
+        "bottom64"
+      ]
+    }
+  },
+  "flex-layout.col#col6-cat": {
+    "children": [
+      "image#pared",
+      "rich-text#txt-pared"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#pared": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria6.png"
+    }
+  },
+  "rich-text#txt-pared": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Pared",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col7-cat": {
+    "children": [
+      "image#candelabro",
+      "rich-text#txt-candelabro"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#candelabro": {
+    "props": {
+      "maxWidth": "90%",
+      "alt": "prueba 1",
+      "src": "/arquivos/categoria7.png"
+    }
+  },
+  "rich-text#txt-candelabro": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Candelabro",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col8-cat": {
+    "children": [
+      "image#exterior",
+      "rich-text#txt-exterior"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#exterior": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria8.png"
+    }
+  },
+  "rich-text#txt-exterior": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Exterior",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col9-cat": {
+    "children": [
+      "image#industrial",
+      "rich-text#txt-industrial"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#industrial": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria9.png"
+    }
+  },
+  "rich-text#txt-industrial": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Industrial",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col10-cat": {
+    "children": [
+      "image#jardin",
+      "rich-text#txt-jardin"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias"
+    }
+  },
+  "image#jardin": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria10.png"
+    }
+  },
+  "rich-text#txt-jardin": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Jardín",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  /*CATEGORIES MOBILE*/
+  "flex-layout.row#categorias-mobile": {
+    "children": [
+      /*"flex-layout.col#col1-mob",
+      "flex-layout.col#col2-mob",
+      "flex-layout.col#col3-mob",
+      "flex-layout.col#col4-mob",
+      "flex-layout.col#col5-mob",
+      "flex-layout.col#col6-mob",
+      "flex-layout.col#col7-mob",
+      "flex-layout.col#col8-mob",
+      "flex-layout.col#col9-mob",
+      "flex-layout.col#col10-mob"*/
+      "list-context.image-list#categories-mobile-banners"
+    ],
+    "props": {
+      //"blockClass": "scroll-horizontal"
+      "blockClass": "mobile-categories"
+    }
+  },
+  "list-context.image-list#categories-mobile-banners": {
+    "title": "Carrusel mobile categories",
+    "children": [
+      "slider-layout#banner-mobile-categories"
+    ],
+    "props": {
+      "height": "auto",
+      "images": [
+        {
+          "image": "/arquivos/categoria1_m.png",
+          "mobileImage": "/arquivos/categoria1_m.png",
+          "description": "Techo",
+          "link": {
+            "url": "/juul"
+          }
+        },
+        {
+          "image": "/arquivos/categoria2_m.png",
+          "mobileImage": "/arquivos/categoria2_m.png",
+          "description": "Piso",
+          "link": {
+            "url": "/myle"
+          }
+        },
+        {
+          "image": "/arquivos/categoria3_m.png",
+          "mobileImage": "/arquivos/categoria3_m.png",
+          "description": "Mesa",
+          "link": {
+            "url": "/pop"
+          }
+        },
+        {
+          "image": "/arquivos/categoria4_m.png",
+          "mobileImage": "/arquivos/categoria4_m.png",
+          "description": "Escritorio",
+          "link": {
+            "url": "/ezee"
+          }
+        },
+        {
+          "image": "/arquivos/categoria5_m.png",
+          "mobileImage": "/arquivos/categoria5_m.png",
+          "description": "Recámara",
+          "link": {
+            "url": "/puff"
+          }
+        },
+        {
+          "image": "/arquivos/categoria6_m.png",
+          "mobileImage": "/arquivos/categoria6_m.png",
+          "description": "Pared",
+          "link": {
+            "url": "/switch"
+          }
+        },
+        {
+          "image": "/arquivos/categoria7_m.png",
+          "mobileImage": "/arquivos/categoria7_m.png",
+          "description": "Candelabro",
+          "link": {
+            "url": "/fogg"
+          }
+        },
+        {
+          "image": "/arquivos/categoria8_m.png",
+          "mobileImage": "/arquivos/categoria8_m.png",
+          "description": "Exterior",
+          "link": {
+            "url": "/aqua"
+          }
+        },
+        {
+          "image": "/arquivos/categoria9_m.png",
+          "mobileImage": "/arquivos/categoria9_m.png",
+          "description": "Industrial",
+          "link": {
+            "url": "/enfuse"
+          }
+        },
+        {
+          "image": "/arquivos/categoria10_m.png",
+          "mobileImage": "/arquivos/categoria10_m.png",
+          "description": "Jardín",
+          "link": {
+            "url": "/enfuse"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-mobile-categories": {
+    "title": "Configuracion banner marcas",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 5,
+        "phone": 5
+      },
+      /*"autoplay": {
+        "timeout": 5000
+      },*/
+      "infinite": true,
+      //"fullWidth": true,
+      "blockClass": "carousel-mobile-categories",
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always"
+      //"fullWidth": true
+    }
+  },
+  "flex-layout.col#col1-mob": {
+    "children": [
+      "image#techo-mob",
+      "rich-text#txt-techo-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#techo-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria1.png"
+    }
+  },
+  "rich-text#txt-techo-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Techo",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col2-mob": {
+    "children": [
+      "image#piso-mob",
+      "rich-text#txt-piso-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#piso-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria2.png"
+    }
+  },
+  "rich-text#txt-piso-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Piso",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col3-mob": {
+    "children": [
+      "image#mesa-mob",
+      "rich-text#txt-mesa-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#mesa-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria3.png"
+    }
+  },
+  "rich-text#txt-mesa-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Mesa",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col4-mob": {
+    "children": [
+      "image#escritorio-mob",
+      "rich-text#txt-escritorio-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#escritorio-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria4.png"
+    }
+  },
+  "rich-text#txt-escritorio-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Escritorio",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col5-mob": {
+    "children": [
+      "image#recamara-mob",
+      "rich-text#txt-recamara-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#recamara-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria5.png"
+    }
+  },
+  "rich-text#txt-recamara-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Recámara",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col6-mob": {
+    "children": [
+      "image#pared-mob",
+      "rich-text#txt-pared-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#pared-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria6.png"
+    }
+  },
+  "rich-text#txt-pared-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Pared",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col7-mob": {
+    "children": [
+      "image#candelabro-mob",
+      "rich-text#txt-candelabro-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#candelabro-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria7.png"
+    }
+  },
+  "rich-text#txt-candelabro-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Candelabro",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col8-mob": {
+    "children": [
+      "image#exterior-mob",
+      "rich-text#txt-exterior-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#exterior-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria8.png"
+    }
+  },
+  "rich-text#txt-exterior-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Exterior",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col9-mob": {
+    "children": [
+      "image#industrial-mob",
+      "rich-text#txt-industrial-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#industrial-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria9.png"
+    }
+  },
+  "rich-text#txt-industrial-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Industrial",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  "flex-layout.col#col10-mob": {
+    "children": [
+      "image#jardin-mob",
+      "rich-text#txt-jardin-mob"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "categorias-mob"
+    }
+  },
+  "image#jardin-mob": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/categoria10.png"
+    }
+  },
+  "rich-text#txt-jardin-mob": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Jardín",
+      "blockClass": [
+        "cat-subtitle"
+      ]
+    }
+  },
+  /*  DISCOUNT  */
+  "flex-layout.row#banners": {
+    "children": [
+      "image#banner1",
+      "image#banner2"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "discount"
+      ]
+    }
+  },
+  /*BLOCK 1*/
+  "image#banner1": {
+    "props": {
+      "maxWidth": "95%",
+      "src": "/arquivos/banner1-cat.jpg"
+    }
+  },
+  /*BLOCK 2*/
+  "image#banner2": {
+    "props": {
+      "maxWidth": "95%",
+      "src": "/arquivos/banner2-cat.jpg"
+    }
+  },
+  /*BANNER ASI DE SIMPLE*/
+  "flex-layout.row#banners-asi-de-simple": {
+    "children": [
+      "image#asi-de-simple"
+    ],
+    "props": {
+      "blockClass": [
+        "asi-de-simple"
+      ]
+    }
+  },
+  "image#asi-de-simple": {
+    "props": {
+      "maxWidth": "100%",
+      "src": "/arquivos/asi_de_simple.png"
+    }
+  },
+  /*BANNER ASI DE SIMPLE BANNER*/
+  "flex-layout.row#banners-asi-de-simple-mobile": {
+    "children": [
+      "image#asi-de-simple-mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "asi-de-simple-mobile"
+      ]
+    }
+  },
+  "image#asi-de-simple-mobile": {
+    "props": {
+      "maxWidth": "100%",
+      "src": "/arquivos/asi-de-simple-mobile.png"
+    }
+  },
+  /*   SPACES | STYLE  TABS */
+  "flex-layout.row#titulo-espacios-estilo": {
+    "children": [
+      "tab-layout#espace-and-style"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "blockClass": [
+        "spaceandstyle-section"
+      ]
+    }
+  },
+  /*1*/
+  "tab-layout#espace-and-style": {
+    "children": [
+      "tab-list#ss",
+      "tab-content#ss"
+    ],
+    "props": {
+      "blockClass": "tab-home-shelfs",
+      "defaultActiveTabId": "space-1",
+      "width": "100%"
+    }
+  },
+  /*2*/
+  "tab-list#ss": {
+    "children": [
+      "rich-text#txt-spaceandsyle",
+      "tab-list.item#space-1",
+      "rich-text#txt-pipe",
+      "tab-list.item#style-2"
+    ],
+    "props": {
+      "blockClass": "tab-list-home-shelfs"
+    }
+  },
+  "rich-text#txt-spaceandsyle": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Comprar por ",
+      "blockClass": [
+        "txt-mini-ss"
+      ]
+    }
+  },
+  "tab-list.item#space-1": {
+    "props": {
+      "tabId": "space-1",
+      "label": "Espacios",
+      "blockClass": "ss-mini",
+      "defaultActiveTab": true
+    }
+  },
+  "rich-text#txt-pipe": {
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "|",
+      "blockClass": [
+        "txt-pipe"
+      ]
+    }
+  },
+  "tab-list.item#style-2": {
+    "props": {
+      "tabId": "style-2",
+      "blockClass": "ss-mini",
+      "label": "Estilo"
+    }
+  },
+  /*CONTENT TAB */
+  "tab-content#ss": {
+    "children": [
+      "tab-content.item#space-1",
+      "tab-content.item#style-2"
+    ],
+    "props": {
+      "blockClass": "tab-content-spacestyle"
+    }
+  },
+  /*1 CONTENT*/
+  "tab-content.item#space-1": {
+    "children": [
+      "flex-layout.row#comprar-1",
+      "flex-layout.row#comprar-2"
+    ],
+    "props": {
+      "tabId": "space-1"
+    }
+  },
+  /*2 CONTENT*/
+  "tab-content.item#style-2": {
+    "children": [
+      "flex-layout.row#comprar-3",
+      "flex-layout.row#comprar-4"
+    ],
+    "props": {
+      "tabId": "style-2"
+    }
+  },
+  /*ROW 1 SPACE*/
+  "flex-layout.row#comprar-1": {
+    "children": [
+      "flex-layout.col#col1-comp",
+      "flex-layout.col#col2-comp",
+      "flex-layout.col#col3-comp"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  /* CONTENIDO ESPACIOS Y ESTILO*/
+  "flex-layout.col#col1-comp": {
+    "children": [
+      "image#sala"
+      //"rich-text#titulo-sala"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "left"
+      ]
+    }
+  },
+  "image#sala": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/sala.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-sala":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sala",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  "flex-layout.col#col2-comp": {
+    "children": [
+      "image#cocina"
+      //"rich-text#titulo-cocina"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  "image#cocina": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/cocina.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-cocina":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Cocina",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  "flex-layout.col#col3-comp": {
+    "children": [
+      "image#comedor"
+      //"rich-text#titulo-comedor"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "right"
+      ]
+    }
+  },
+  "image#comedor": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/comedor.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-comedor":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Comedor",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  /*ROW 2 SPACE*/
+  "flex-layout.row#comprar-2": {
+    "children": [
+      "flex-layout.col#col4-comp",
+      "flex-layout.col#col5-comp",
+      "flex-layout.col#col6-comp"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  /* CONTENIDO ESPACIOS Y ESTILO*/
+  "flex-layout.col#col4-comp": {
+    "children": [
+      "image#rec"
+      //"rich-text#titulo-recamara"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "left"
+      ]
+    }
+  },
+  "image#rec": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/recamara.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-recamara":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Recámara",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  "flex-layout.col#col5-comp": {
+    "children": [
+      "image#bano"
+      //"rich-text#titulo-bano"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  "image#bano": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/bano.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-bano":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Baño",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  "flex-layout.col#col6-comp": {
+    "children": [
+      "image#ext"
+      //"rich-text#titulo-exterior"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "right"
+      ]
+    }
+  },
+  "image#ext": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/exterior.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-exterior":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Exterior",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  /*ROW 3 STYLE*/
+  "flex-layout.row#comprar-3": {
+    "children": [
+      "flex-layout.col#col7-comp",
+      "flex-layout.col#col8-comp"
+      //"flex-layout.col#col9-comp"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  /* CONTENIDO ESPACIOS Y ESTILO*/
+  "flex-layout.col#col7-comp": {
+    "children": [
+      "image#moderno"
+      //"rich-text#titulo-moderno"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "left"
+      ]
+    }
+  },
+  "image#moderno": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/moderno.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-moderno":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Moderno",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  "flex-layout.col#col8-comp": {
+    "children": [
+      "image#transicional"
+      //"rich-text#titulo-transicional"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  "image#transicional": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/transicional.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-transicional":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Transicional",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  "flex-layout.col#col9-comp": {
+    "children": [
+      //"image#clasico"
+      //"rich-text#titulo-clasico"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "right"
+      ]
+    }
+  },
+  "image#clasico": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/clasico.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-clasico":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Clásico",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  /*ROW 4 STYLE*/
+  "flex-layout.row#comprar-4": {
+    "children": [
+      "flex-layout.col#col10-comp",
+      "flex-layout.col#col11-comp"
+      //"flex-layout.col#col12-comp"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  /* CONTENIDO ESPACIOS Y ESTILO*/
+  "flex-layout.col#col10-comp": {
+    "children": [
+      "image#vintage"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "left"
+      ]
+    }
+  },
+  "image#vintage": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/vintage.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  "flex-layout.col#col11-comp": {
+    "children": [
+      "image#glam"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "espaciosyestilo"
+    }
+  },
+  "image#glam": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/glam.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  "flex-layout.col#col12-comp": {
+    "children": [
+      //"image#cabin"
+      //"rich-text#titulo-cabin"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "espaciosyestilo",
+        "right"
+      ]
+    }
+  },
+  "image#cabin": {
+    "props": {
+      "maxWidth": "90%",
+      "src": "/arquivos/cabin.jpg",
+      "blockClass": "image-espacios"
+    }
+  },
+  /*"rich-text#titulo-cabin":{
+    "title": "Texto Informação Superior",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Cabin",
+      "blockClass": ["subt-espacios"]
+    }
+  },*/
+  /*    TENDENCIAS    */
+  "flex-layout.row#titulo-tendencias": {
+    "children": [
+      "rich-text#titulo-tendencias",
+      "link#titulo"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "blockClass": "categorias-title"
+    }
+  },
+  "rich-text#titulo-tendencias": {
+    "title": "Texto Informação Superior",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Lo más nuevo",
+      "blockClass": [
+        "txt-cat"
+      ]
+    }
+  },
+  "flex-layout.row#titulo-hotsale": {
+    "children": [
+      "rich-text#titulo-hotsale"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "marginTop": 0,
+      "blockClass": "hotsale-title"
+    }
+  },
+  "rich-text#titulo-hotsale": {
+    "title": "Texto Hot Sale",
+    "props": {
+      "width": "100%",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Tendremos lo mejor para ",
+      "blockClass": [
+        "txt-hotsale"
+      ]
+    }
+  },
+  /*    OFERTAS    */
+  "flex-layout.row#titulo-ofertas": {
+    "children": [
+      "rich-text#titulo-ofertas",
+      "link#titulo"
+    ],
+    "props": {
+      //"fullWidth": true,
+      "blockClass": "categorias-title"
+    }
+  },
+  "rich-text#titulo-ofertas": {
+    "title": "Texto Ofertas",
+    "props": {
+      //"width": "60%",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "Ofertas",
+      "blockClass": [
+        "txt-cat"
+      ]
+    }
+  },
+  "link#titulo": {
+    "title": "Button Link",
+    "props": {
+      "label": "Ver más",
+      "href": "/153?map=productClusterIds",
+      "displayMode": "button",
+      "buttonProps": {
+        "size": "small"
+      },
+      "blockClass": "link-titulo"
+    }
+  },
+  /*    PRODUCTOS DE TENDENCIAS    */
+  /*"product-summary.shelf#demo1": {
+    
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showPaginationDots": "never",
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "list-home-shelf-slider"
+    }
+  },*/
+  "flex-layout.row#context-tendencias": {
+    "children": [
+      "shelf#products"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "contxttendencias"
+    }
+  },
+  "product-summary.shelf#hotsale": {
+    "children": [
+      "add-to-list-btn", /*wishlist*/
+      "stack-layout#prodsum",
+      "vtex.product-highlights@2.x:product-highlights",
+      "product-summary-name",
+      "vtex.store-components:product-brand",
+      "product-rating-inline",
+      "FormatPrice",
+      "product-summary-price",
+      "product-summary-space",
+      //"add-to-cart-button",
+      "flex-layout.row#buy-now"
+    ],
+    "props": {
+      "blockClass": "summary-hotsale"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights": {
+       "props": {
+         "type": "collection",
+         "filter": {
+           "type": "show",
+           "highlightNames": ["Pre HOTSALE"]
+         }
+       },
+       "children": [
+         "product-highlight-text"
+       ]
+     },
+     "product-highlight-text": {
+       "props": {
+         "message": "{highlightName}",
+         "blockClass": "cucardas"
+       }
+    },
+  // "vtex.product-highlights@2.x:product-highlights": {
+  //   "children": ["product-highlight-text"],
+  //   "props": {
+  //     "type": "collection"
+  //   }
+  // },
+  // "product-highlight-text": {
+  //   "props": {
+  //     "message": "{highlightName}"
+  //   }
+  // },
+  "shelf#hotsale": {
+    "title": "productos",
+    "blocks": [
+      "product-summary.shelf#hotsale"
+    ],
+    "props": {
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 5,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "",
+        "gap": "ph5"
+      },
+      "blockClass": "hotsale-vitrina"
+    }
+  },
+  "shelf#products": {
+    "title": "productos",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "paginationDotsVisibility": "hidden",
+      "productList": {
+        "maxItems": 5,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "",
+        "gap": "ph5"
+      }
+    }
+  },
+  "flex-layout.row#context-ofertas": {
+    "children": [
+      "shelf#hotsale"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "hotsale"
+    }
+  },
+  "flex-layout.row#context-ofertas-hotsale": {
+    "children": [
+      "shelf#hotsale"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "hotsale"
+    }
+  },
+  "flex-layout.row#context-ofertas-hotsale2": {
+    "children": [
+      "shelf#hotsale"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "hotsale-mobile"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#demo1"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "contxttendencias"
+    }
+  },
+  "list-context.product-list#demo1": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ]
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  /*
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },*/
+  /* Banners Marcas desktop BY ANDRES */
+  "flex-layout.row#banners-marcas-desktop1-titulo": {
+    "children": [
+      "rich-text#titulo-banner-marcas-desktop"
+    ],
+    "props": {
+      "blockClass": "titulo-banner-marcas-desktop"
+    }
+  },
+  "rich-text#titulo-banner-marcas-desktop": {
+    "props": {
+      "text": "Marcas",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "titulo-banner-marcas-desktop"
+    }
+  },
+  "flex-layout.row#banners-marcas-desktop1": {
+    "children": [
+      "flex-layout.col#banner-marca-1-desktop2",
+      "flex-layout.col#banner-marca-4-desktop2",
+      "flex-layout.col#banner-marca-3-desktop",
+      "flex-layout.col#banner-marca-4-desktop",
+      "flex-layout.col#banner-marca-5-desktop"
+    ],
+    "props": {
+      "blockClass": "row1-marcas"
+    }
+  },
+  "flex-layout.col#banner-marca-1-desktop": {
+    "children": [
+      "image#banner1-desktop"
+    ]
+  },
+  "flex-layout.col#banner-marca-2-desktop": {
+    "children": [
+      "image#banner2-desktop"
+    ]
+  },
+  "flex-layout.col#banner-marca-3-desktop": {
+    "children": [
+      "image#banner3-desktop"
+    ]
+  },
+  "flex-layout.col#banner-marca-4-desktop": {
+    "children": [
+      "image#banner4-desktop"
+    ]
+  },
+  "flex-layout.col#banner-marca-5-desktop": {
+    "children": [
+      "image#banner5-desktop"
+    ]
+  },
+  "image#banner1-desktop": {
+    "props": {
+      "src": "/arquivos/artistica.png",
+      "blockClass": "imagen1Row1-marcas",
+      "link": {
+        "url": "/artistica"
+      }
+    }
+  },
+  "image#banner2-desktop": {
+    "props": {
+      "src": "/arquivos/general.png",
+      "blockClass": "imagen2Row1-marcas",
+      "link": {
+        "url": "/General-Lighting"
+      }
+    }
+  },
+  "image#banner3-desktop": {
+    "props": {
+      "width": "200px;",
+      "height": "50px;",
+      "src": "/arquivos/lightek.png",
+      "blockClass": "imagen3Row1-marcas",
+      "link": {
+        "url": "/Lightek"
+      }
+    }
+  },
+  "image#banner4-desktop": {
+    "props": {
+      "src": "/arquivos/in_lite.png",
+      "blockClass": "imagen4Row1-marcas",
+      "link": {
+        "url": "/Inlite"
+      }
+    }
+  },
+  "image#banner5-desktop": {
+    "props": {
+      "src": "/arquivos/designers.png",
+      "blockClass": "imagen5Row1-marcas",
+      "link": {
+        "url": "/Designers"
+      }
+    }
+  },
+  "flex-layout.row#banners-marcas-desktop2": {
+    "children": [
+      "flex-layout.col#banner-marca-1-desktop2",
+      "flex-layout.col#banner-marca-2-desktop2",
+      "flex-layout.col#banner-marca-3-desktop2",
+      "flex-layout.col#banner-marca-4-desktop2"
+    ],
+    "props": {
+      "blockClass": "row2-marcas",
+      "marginTop": 8
+    }
+  },
+  "flex-layout.col#banner-marca-1-desktop2": {
+    "children": [
+      "image#banner3-desktop3"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#banner-marca-2-desktop2": {
+    "children": [
+      "image#banner3-desktop2"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#banner-marca-3-desktop2": {
+    "children": [
+      "image#banner4-desktop2"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#banner-marca-4-desktop2": {
+    "children": [
+      "image#banner2-desktop3"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "image#banner1-desktop2": {
+    "props": {
+      "src": "/arquivos/logo-calux-100.png",
+      "blockClass": "imagen1Row2-marcas",
+      "link": {
+        "url": "/calux"
+      }
+    }
+  },
+  "image#banner2-desktop2": {
+    "props": {
+      "src": "/arquivos/logo-dynatrap-100.png",
+      "blockClass": "imagen2Row2-marcas",
+      "link": {
+        "url": "/DynaTrap"
+      }
+    }
+  },
+  "image#banner3-desktop2": {
+    "props": {
+      "src": "/arquivos/logo-hunter-100.png",
+      "blockClass": "imagen3Row2-marcas",
+      "link": {
+        "url": "/hunter"
+      }
+    }
+  },
+  "image#banner4-desktop2": {
+    "props": {
+      "src": "/arquivos/logo-midea-100.png",
+      "blockClass": "imagen4Row2-marcas",
+      "link": {
+        "url": "/midea"
+      }
+    }
+  },
+  "flex-layout.row#banners-marcas-desktop3": {
+    "children": [
+      "flex-layout.col#banner-marca-1-desktop3",
+      "flex-layout.col#banner-marca-2-desktop3",
+      "flex-layout.col#banner-marca-3-desktop3",
+      "flex-layout.col#banner-marca-4-desktop3"
+    ],
+    "props": {
+      "blockClass": "row3-marcas",
+      "marginTop": 8
+    }
+  },
+  "flex-layout.col#banner-marca-1-desktop3": {
+    "children": [
+      "image#banner1-desktop2"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#banner-marca-2-desktop3": {
+    "children": [
+      "image#banner1-desktop3"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#banner-marca-3-desktop3": {
+    "children": [
+      "image#banner2-desktop2"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#banner-marca-4-desktop3": {
+    "children": [
+      "image#banner4-desktop3"
+    ],
+    "props": {
+      "width": "20%"
+    }
+  },
+  "image#banner1-desktop3": {
+    "props": {
+      "src": "/arquivos/logo-ocre-100.png",
+      "blockClass": "imagen1Row3-marcas",
+      "link": {
+        "url": "/ocre"
+      }
+    }
+  },
+  "image#banner2-desktop3": {
+    "props": {
+      "src": "/arquivos/logo-wiz-100.png",
+      "blockClass": "imagen2Row3-marcas",
+      "link": {
+        "url": "/wiz"
+      }
+    }
+  },
+  "image#banner3-desktop3": {
+    "props": {
+      "src": "/arquivos/Logos-Tecnolite-100.png",
+      "blockClass": "imagen3Row3-marcas",
+      "link": {
+        "url": "/tecnolite"
+      }
+    }
+  },
+  "image#banner4-desktop3": {
+    "props": {
+      "src": "/arquivos/logo-toolcraft-100.png",
+      "blockClass": "imagen4Row3-marcas",
+      "link": {
+        "url": "/toolcraft"
+      }
+    }
+  },
+  /* Banners marcas mobile BY ANDRES & ZUS */
+  "flex-layout.row#banners-marcas-mobile1": {
+    "children": [
+      "flex-layout.col#banner-marca-1-mobile",
+      "flex-layout.col#banner-marca-2-mobile"
+    ],
+    "props": {
+      "blockClass": "row1-marcas-mobile"
+    }
+  },
+  "flex-layout.col#banner-marca-1-mobile": {
+    "children": [
+      "image#banner1-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col1"
+    }
+  },
+  "flex-layout.col#banner-marca-2-mobile": {
+    "children": [
+      "image#banner2-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col2"
+    }
+  },
+  "flex-layout.row#banners-marcas-mobile2": {
+    "children": [
+      "flex-layout.col#banner-marca-4-mobile",
+      "flex-layout.col#banner-marca-5-mobile"
+    ],
+    "props": {
+      "blockClass": "row2-marcas-mobile"
+    }
+  },
+  "flex-layout.col#banner-marca-3-mobile": {
+    "children": [
+      "image#banner3-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col3"
+    }
+  },
+  "flex-layout.col#banner-marca-4-mobile": {
+    "children": [
+      "image#banner4-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col4"
+    }
+  },
+  "flex-layout.row#banners-marcas-mobile3": {
+    "children": [
+      "flex-layout.col#banner-marca-6-mobile",
+      "flex-layout.col#banner-marca-7-mobile"
+    ],
+    "props": {
+      "blockClass": "row3-marcas-mobile"
+    }
+  },
+  "flex-layout.col#banner-marca-5-mobile": {
+    "children": [
+      "image#banner5-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col5"
+    }
+  },
+  "flex-layout.col#banner-marca-6-mobile": {
+    "children": [
+      "image#banner6-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col6"
+    }
+  },
+  "flex-layout.row#banners-marcas-mobile4": {
+    "children": [
+      "flex-layout.col#banner-marca-8-mobile",
+      "flex-layout.col#banner-marca-3-mobile"
+    ],
+    "props": {
+      "blockClass": "row4-marcas-mobile"
+    }
+  },
+  "flex-layout.col#banner-marca-7-mobile": {
+    "children": [
+      "image#banner7-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col7"
+    }
+  },
+  "flex-layout.col#banner-marca-8-mobile": {
+    "children": [
+      "image#banner8-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col8"
+    }
+  },
+  "flex-layout.row#banners-marcas-mobile5": {
+    "children": [
+      "flex-layout.col#banner-marca-9-mobile",
+      "flex-layout.col#banner-marca-10-mobile"
+    ],
+    "props": {
+      "blockClass": "row5-marcas-mobile"
+    }
+  },
+  "flex-layout.row#banners-marcas-mobile6": {
+    "children": [
+      "flex-layout.col#banner-marca-11-mobile",
+      "flex-layout.col#banner-marca-12-mobile"
+    ],
+    "props": {
+      "blockClass": "row6-marcas-mobile"
+    }
+  },
+  "flex-layout.row#banners-marcas-mobile7": {
+    "children": [
+      "flex-layout.col#banner-marca-13-mobile"
+    ],
+    "props": {
+      "blockClass": "row7-marcas-mobile"
+    }
+  },
+  "flex-layout.col#banner-marca-9-mobile": {
+    "children": [
+      "image#banner9-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col9"
+    }
+  },
+  "flex-layout.col#banner-marca-10-mobile": {
+    "children": [
+      "image#banner10-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col10"
+    }
+  },
+  "flex-layout.col#banner-marca-11-mobile": {
+    "children": [
+      "image#banner11-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col11"
+    }
+  },
+  "flex-layout.col#banner-marca-12-mobile": {
+    "children": [
+      "image#banner12-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col12"
+    }
+  },
+  "flex-layout.col#banner-marca-13-mobile": {
+    "children": [
+      "image#banner13-mobile"
+    ],
+    "props": {
+      "blockClass": "marcas-mobile-col13"
+    }
+  },
+  "image#banner1-mobile": {
+    "props": {
+      "src": "/arquivos/logo-hunter-100.png",
+      "blockClass": "imagen1mobile-marcas",
+      "link": {
+        "url": "/hunter"
+      }
+    }
+  },
+  "image#banner2-mobile": {
+    "props": {
+      "src": "/arquivos/Logos-Tecnolite-100.png",
+      "blockClass": "imagen2mobile-marcas",
+      "link": {
+        "url": "/tecnolite"
+      }
+    }
+  },
+  "image#banner3-mobile": {
+    "props": {
+      "width": "200px;",
+      "height": "50px;",
+      "src": "/arquivos/logo-wiz-100.png",
+      "blockClass": "imagen3mobile-marcas",
+      "link": {
+        "url": "/wiz"
+      }
+    }
+  },
+  "image#banner4-mobile": {
+    "props": {
+      "src": "/arquivos/in_lite.png",
+      "blockClass": "imagen4mobile-marcas",
+      "link": {
+        "url": "/Inlite"
+      }
+    }
+  },
+  "image#banner5-mobile": {
+    "props": {
+      "src": "/arquivos/designers.png",
+      "blockClass": "imagen5mobile-marcas",
+      "link": {
+        "url": "/Designers"
+      }
+    }
+  },
+  "image#banner6-mobile": {
+    "props": {
+      "src": "/arquivos/general.png",
+      "blockClass": "imagen6mobile-marcas",
+      "link": {
+        "url": "/General-Lighting"
+      }
+    }
+  },
+  "image#banner7-mobile": {
+    "props": {
+      "src": "/arquivos/ike_lite2.png",
+      "blockClass": "imagen7mobile-marcas",
+      "link": {
+        "url": "/Ike-Lite"
+      }
+    }
+  },
+  "image#banner8-mobile": {
+    "props": {
+      "src": "/arquivos/logo-ocre-100.png",
+      "blockClass": "imagen8mobile-marcas",
+      "link": {
+        "url": "/ocre"
+      }
+    }
+  },
+  "image#banner9-mobile": {
+    "props": {
+      "src": "/arquivos/logo-dynatrap-100.png",
+      "blockClass": "imagen9mobile-marcas",
+      "link": {
+        "url": "/dynatrap"
+      }
+    }
+  },
+  "image#banner10-mobile": {
+    "props": {
+      "src": "/arquivos/logo-midea-100.png",
+      "blockClass": "imagen10mobile-marcas",
+      "link": {
+        "url": "/midea"
+      }
+    }
+  },
+  "image#banner11-mobile": {
+    "props": {
+      "src": "/arquivos/logo-toolcraft-100.png",
+      "blockClass": "imagen11mobile-marcas",
+      "link": {
+        "url": "/toolcraft"
+      }
+    }
+  },
+  "image#banner12-mobile": {
+    "props": {
+      "src": "/arquivos/logo-calux-100.png",
+      "blockClass": "imagen12mobile-marcas",
+      "link": {
+        "url": "/calux"
+      }
+    }
+  },
+  "image#banner13-mobile": {
+    "props": {
+      "src": "/arquivos/logo-dynatrap-100.png",
+      "blockClass": "imagen13mobile-marcas",
+      "link": {
+        "url": "/DynaTrap"
+      }
+    }
+  },
+  /*    BRANDS CARROUSEL    */
+  "list-context.image-list#brand-banners": {
+    "title": "Carrusel marcas",
+    "children": [
+      "slider-layout#banner-images-brand"
+    ],
+    "props": {
+      "height": "auto",
+      "images": [
+        {
+          "image": "/arquivos/artelucero.png",
+          "mobileImage": "/arquivos/artelucero.png",
+          "link": {
+            "url": "/juul"
+          }
+        },
+        {
+          "image": "/arquivos/general.png",
+          "mobileImage": "/arquivos/general.png",
+          "link": {
+            "url": "/myle"
+          }
+        },
+        {
+          "image": "/arquivos/artistica.png",
+          "mobileImage": "/arquivos/artistica.png",
+          "props": {
+            "blockClass": "prueba"
+          },
+          "link": {
+            "url": "/pop"
+          }
+        },
+        {
+          "image": "/arquivos/in_lite.png",
+          "mobileImage": "/arquivos/in_lite.png",
+          "link": {
+            "url": "/ezee"
+          }
+        },
+        {
+          "image": "/arquivos/artfan.png",
+          "mobileImage": "/arquivos/artfan.png",
+          "link": {
+            "url": "/puff"
+          }
+        },
+        {
+          "image": "/arquivos/designers.png",
+          "mobileImage": "/arquivos/designers.png",
+          "link": {
+            "url": "/switch"
+          }
+        },
+        {
+          "image": "/arquivos/artlamp.png",
+          "mobileImage": "/arquivos/artlamp.png",
+          "link": {
+            "url": "/fogg"
+          }
+        },
+        {
+          "image": "/arquivos/ike_lite2.png",
+          "mobileImage": "/arquivos/ike_lite.png",
+          "link": {
+            "url": "/aqua"
+          }
+        },
+        {
+          "image": "/arquivos/lightek.png",
+          "mobileImage": "/arquivos/lightek.png",
+          "link": {
+            "url": "/enfuse"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-images-brand": {
+    "title": "Configuracion banner marcas",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 5,
+        "phone": 3
+      },
+      "autoplay": {
+        "timeout": 5000
+      },
+      "infinite": true,
+      //"fullWidth": true,
+      "blockClass": "carousel-brand",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+      //"fullWidth": true
+    }
+  },
+  /*    SERVICES ICONS   */
+  "flex-layout.row#services": {
+    "title": "Our services",
+    "children": [
+      "flex-layout.col#usd-product--1",
+      "flex-layout.col#usd-product--2",
+      "flex-layout.col#usd-product--3"
+    ],
+    "props": {
+      "blockClass": "services"
+    }
+  },
+  "flex-layout.col#usd-product--1": {
+    "children": [
+      "logo#delivery",
+      "rich-text#usd-text-a"
+    ],
+    "props": {
+      "blockClass": "usd-wrapper"
+    }
+  },
+  "logo#delivery": {
+    "props": {
+      "title": "delivery",
+      "url": "/arquivos/icon_delivery.png",
+      "width": "40"
+    }
+  },
+  "rich-text#usd-text-a": {
+    "props": {
+      "text": "Envío gratis por lanzamiento",
+      "blockClass": "usd-title"
+    }
+  },
+  "flex-layout.col#usd-product--2": {
+    "children": [
+      "logo#card",
+      "rich-text#usd-text-b"
+    ],
+    "props": {
+      "blockClass": "usd-wrapper"
+    }
+  },
+  "logo#card": {
+    "props": {
+      "title": "card",
+      "url": "/arquivos/icon_card.png",
+      "width": "40"
+    }
+  },
+  "rich-text#usd-text-b": {
+    "props": {
+      "text": "Tu compra es 100% segura",
+      "blockClass": "usd-title"
+    }
+  },
+  "flex-layout.col#usd-product--3": {
+    "children": [
+      "logo#help",
+      "rich-text#usd-text-c"
+    ],
+    "props": {
+      "blockClass": "usd-wrapper"
+    }
+  },
+  "logo#help": {
+    "props": {
+      "title": "help",
+      "href": "/",
+      "url": "/arquivos/icon_help.png",
+      "width": "40"
+    }
+  },
+  "rich-text#usd-text-c": {
+    "props": {
+      "text": "Recibe atención para cualquier duda",
+      "blockClass": "usd-title"
+    }
+  }
+}

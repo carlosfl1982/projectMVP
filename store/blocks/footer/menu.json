@@ -1,0 +1,384 @@
+{
+  "vtex.menu@2.x:menu#footer-1": {
+    "title": "Menu Footer (1)",
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title-footer-ciudades",
+      "menu-item#ciudad-1",
+      "menu-item#ciudad-2",
+      "menu-item#ciudad-3",
+      "menu-item#ciudad-4",
+      "menu-item#ciudad-5"
+    ]
+  },
+  "rich-text#title-footer-ciudades": {
+    "props": {
+      "text": "Lamparaya",
+      "blockClass": "footer-menu-titles"
+    }   
+  },
+  "menu-item#ciudad-1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Home",
+        "text": "Home"
+      }
+    }
+  },
+  "menu-item#ciudad-2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Colgante",
+        "text": "Colgante"
+      }
+    }
+  },
+  "menu-item#ciudad-3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Pared",
+        "text": "Pared"
+      }
+    }
+  },
+  "menu-item#ciudad-4": {
+    "props": {
+      "id": "menu-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Piso",
+        "text": "Piso"
+      }
+    }
+  },
+  "menu-item#ciudad-5": {
+    "props": {
+      "id": "menu-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Mesa",
+        "text": "Mesa"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-2": {
+    "title": "Menu Footer (2)",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "empty-title"
+    },
+    "children": [
+      "rich-text#title-footer-inicio-cont",
+      "menu-item#inicio-7",
+      "menu-item#inicio-8",
+      "menu-item#inicio-9",
+      "menu-item#inicio-10",
+      "menu-item#inicio-11"
+    ]
+  },
+  "rich-text#title-footer-inicio-cont":{
+    "props": {
+      "text": " ",
+      "blockClass": "footer-menu-titles-cont"
+    }
+  },
+  "menu-item#inicio-7": {
+    "props": {
+      "id": "menu-item-inicio-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Candil",
+        "text": "Candil"
+      }
+    }
+  },
+  "menu-item#inicio-8": {
+    "props": {
+      "id": "menu-item-inicio-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Plafón",
+        "text": "Plafón"
+      }
+    }
+  },
+  "menu-item#inicio-9": {
+    "props": {
+      "id": "menu-item-inicio-9",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Exterior",
+        "text": "Exterior"
+      }
+    }
+  },
+  "menu-item#inicio-10": {
+    "props": {
+      "id": "menu-item-inicio-10",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Sale + Clearance",
+        "text": "Sale + Clearance"
+      }
+    }
+  },
+  "menu-item#inicio-11": {
+    "props": {
+      "id": "menu-item-inicio-11",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Smart home",
+        "text": "Smart home"
+      }
+    }
+  },
+
+
+  "vtex.menu@2.x:menu#footer-3": {
+    "title": "Menu Footer (3)",
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title-footer-inicio",
+      "menu-item#inicio-1",
+      "menu-item#inicio-2",
+      "menu-item#inicio-4",
+      "menu-item#inicio-5",
+      "menu-item#inicio-6"
+    ]
+  },
+  "rich-text#title-footer-inicio": {
+    "props": {
+      "text": "Centro de ayuda",
+      "blockClass": "footer-menu-titles"
+    }   
+  },
+  "menu-item#inicio-1": {
+    "props": {
+      "id": "menu-item-inicio-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tyc",
+        "noFollow": false,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#inicio-2": {
+    "props": {
+      "id": "menu-item-inicio-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-privacidad",
+        "noFollow": false,
+        "tagTitle": "Aviso de privacidad",
+        "text": "Aviso de privacidad"
+      }
+    }
+  },
+  "menu-item#inicio-4": {
+    "props": {
+      "id": "menu-item-inicio-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-envio",
+        "noFollow": false,
+        "tagTitle": "Política de envío",
+        "text": "Política de envío"
+      }
+    }
+  },
+  "menu-item#inicio-5": {
+    "props": {
+      "id": "menu-item-inicio-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/devoluciones",
+        "noFollow": false,
+        "tagTitle": "Devoluciones",
+        "text": "Devoluciones"
+      }
+    }
+  },
+  "menu-item#inicio-6": {
+    "props": {
+      "id": "menu-item-inicio-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/facturar",
+        "noFollow": false,
+        "tagTitle": "Facturar",
+        "text": "Facturar"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-4": {
+    "title": "Menu Footer (3)",
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "rich-text#title-footer-social",
+      "flex-layout.row#social-network"
+    ]
+  },
+  "rich-text#title-footer-social": {
+    "props": {
+      "text": "Síguenos en",
+      "blockClass": "footer-menu-titles"
+    }   
+  },
+  "flex-layout.row#social-network": {
+    "children": [
+      "image#facebook",
+      "image#instagram",
+      "image#dos",
+      "image#tres"
+    ],
+    "props": {
+      "blockClass": "social"
+    }
+  },
+  "image#facebook": {
+    "props": {
+      "maxWidth": "50%",
+      "src": "/arquivos/icon_facebook.png",
+      "blockClass": "fb-icon"
+    }
+  },
+  "image#instagram": {
+    "props": {
+      "maxWidth": "50%",
+      "src": "/arquivos/icon_instagram.png",
+      "blockClass": "insta-icon"
+    }
+  },
+  "image#dos": {
+    
+  },
+  "image#tres": {
+    
+  },
+
+
+  "vtex.menu@2.x:menu#footer-5": {
+    "title": "Menu Footer (3)",
+    "props": {
+      "blockClass": "sellos",
+      "orientation": "vertical"
+    },
+    "children": [
+      "flex-layout.row#sello",
+      "flex-layout.row#amvo"
+    ]
+  },
+
+  "flex-layout.row#sello": {
+    "children": [
+      "image#sello-confianza"
+    ],
+    "props": {
+      "blockClass": "selloconfianza"
+    }
+  },
+  "image#sello-confianza": {
+    "props": {
+      "maxWidth": "70%",
+      "src": "/arquivos/asociacion_sello.png"
+    }
+  },
+
+  "flex-layout.row#amvo": {
+    "children": [
+      "image#amvo"
+    ],
+    "props": {
+      "blockClass": "selloconfianza"
+    }
+  },
+  "image#amvo": {
+    "props": {
+      "maxWidth": "70%",
+      "src": "/arquivos/amvo_logo.png"
+    }
+  }
+  
+
+}
